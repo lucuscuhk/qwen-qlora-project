@@ -1,15 +1,23 @@
-```bash
-qwen-qlora-project/
-├── train.py                        # Training script using QLoRA
-├── gradio_demo.py                  # Streamed chat demo with Gradio
-├── download.sh                     # Downloads the trained model to correct folder
-├── QLoRA_qwen2.5-7b-finance/       # Full merged model (for inference)
-├── Qwen2.5-7B-Instruct/            # Base model for training (must be manually downloaded)
-├── adapter&tokenizer_qwen2.5-7b/   # LoRA adapter & tokenizer only (optional, non-merged)
-│   ├── adapter_model.bin
-│   └── tokenizer_config.json
-├── data/                           # Training data and sample
-│   └── 30k_qllora_format.jsonl     # Small sample kept for demo
-├── .gitignore
-└── README.md
-```
+# Core model training and inference libraries
+torch==2.1.2                       # PyTorch framework for model training
+transformers==4.51.2              # Hugging Face Transformers for model architecture & tokenizer
+peft==0.9.0                        # Parameter-efficient fine-tuning (LoRA support)
+bitsandbytes==0.41.2              # 4-bit quantization backend for QLoRA
+accelerate==0.27.2                # Multi-GPU and mixed precision training
+
+# Dataset loading and processing
+datasets==2.18.0                  # Hugging Face Datasets library for JSONL data handling
+
+# Logging and tracking
+wandb==0.16.6                      # Weights & Biases for experiment tracking
+
+# Chat demo interface
+gradio==5.25.0                     # Web UI for interactive chatbot demo
+gradio_client==1.8.0              # (auto-installed with gradio)
+
+# Optional media/audio dependencies (used by torch ecosystem)
+torchaudio==2.1.2                 # Optional - audio support
+torchvision==0.16.2               # Optional - vision support
+
+# (Optional) Streaming output support for generation
+transformers-stream-generator==0.0.5  # Optional - enables streaming token-by-token outputs
