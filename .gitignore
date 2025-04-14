@@ -1,0 +1,49 @@
+# 🔒 Ignore model weights and large files
+*.safetensors
+*.bin
+pytorch_model*
+
+# 📁 Ignore model directories but keep their structure
+QLoRA_qwen2.5-7b-finance/*
+!QLoRA_qwen2.5-7b-finance/.gitkeep
+
+Qwen2.5-7B-Instruct/*
+!Qwen2.5-7B-Instruct/.gitkeep
+
+adapter&tokenizer_qwen2.5-7b/*
+!adapter&tokenizer_qwen2.5-7b/.gitkeep
+
+# 🤖 Ignore Hugging Face cache
+.cache/
+hub/
+
+# 🐍 Ignore Python virtual environments
+.venv/
+env/
+venv/
+
+# ⚙️ Ignore Python build/cache files
+__pycache__/
+*.py[cod]
+
+# 🧾 Ignore logs and temp files
+nohup.out
+*.log
+
+# 📊 Ignore wandb logs
+wandb/
+
+# 🧠 Ignore IDE and OS metadata
+.vscode/
+.DS_Store
+.ipynb_checkpoints/
+
+# 📦 Ignore large training datasets
+data/100k_qllora_format.jsonl
+data/100k_raw.json
+data/train_500k.json
+data/train_175k.json
+
+# ✅ Keep small example dataset and script
+!data/30k_qllora_format.jsonl
+!data/json_to_qlora_jsonl.py
