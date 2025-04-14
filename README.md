@@ -6,7 +6,7 @@ It is intended as a learning resource and starting point for developers looking 
 
 - Fine-tune models on custom instruction datasets
 - Use low-rank adaptation (LoRA) with 4-bit quantization (NF4)
-- Perform multi-GPU training with `accelerate`
+- Perform multi-GPU(8 * 4090) training with `accelerate`
 - Deploy the result in an interactive Gradio chatbot
 
 ---
