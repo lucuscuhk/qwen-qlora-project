@@ -1,0 +1,15 @@
+```bash
+qwen-qlora-project/
+├── train.py                        # Training script using QLoRA
+├── gradio_demo.py                  # Streamed chat demo with Gradio
+├── download.sh                     # Downloads the trained model to correct folder
+├── QLoRA_qwen2.5-7b-finance/       # Full merged model (for inference)
+├── Qwen2.5-7B-Instruct/            # Base model for training (must be manually downloaded)
+├── adapter&tokenizer_qwen2.5-7b/   # LoRA adapter & tokenizer only (optional, non-merged)
+│   ├── adapter_model.bin
+│   └── tokenizer_config.json
+├── data/                           # Training data and sample
+│   └── 30k_qllora_format.jsonl     # Small sample kept for demo
+├── .gitignore
+└── README.md
+```
