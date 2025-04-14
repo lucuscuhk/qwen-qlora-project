@@ -41,6 +41,7 @@ qwen-qlora-project/
 │   └── tokenizer_config.json
 ├── data/                           # Training data and sample
 │   └── 30k_qllora_format.jsonl    # Small sample kept for demo
+├── requirements.txt                # Python dependencies
 ├── .gitignore
 └── README.md
 ```
