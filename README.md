@@ -126,3 +126,13 @@ You can launch a local Gradio chat interface for testing:
 python gradio_demo.py
 
 
+## Training Metrics (wandb)
+
+Below are the training curves tracked via wandb:
+
+![Loss](assets/loss.png)
+![Learning Rate](assets/lr.png)
+![ETA (minutes)](assets/ETA.png)
+
+These plots show stable convergence, clean cosine LR decay, and low-noise loss with average value near 1, indicating healthy fine-tuning.
+
