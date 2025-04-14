@@ -131,6 +131,6 @@ The following curves were recorded during training using wandb:
 
 ![Learning Rate Schedule](assets/lr.png)
 
-![Estimated Time to Completion](assets/eta.png)
+![Estimated Time to Completion](assets/ETA.png)
 
 These plots demonstrate stable convergence, a smooth cosine learning rate schedule, and overall training health.
