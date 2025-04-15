@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Hugging Face repo ID 
-REPO_ID="lucus112/QLoRA_qwen2.5-7b-finance"
+REPO_ID="lucus112/Qlora_qwen2.5-7b-finance"
 
 # Local target folder 
 TARGET_DIR="./QLoRA_qwen2.5-7b-finance"
