@@ -124,14 +124,4 @@ You can launch a local Gradio chat interface for testing:
 python gradio_demo.py
 ```
 
-## Training Metrics
 
-The following curves were recorded during training using wandb:
-
-![Training Loss](assets/loss.png)
-
-![Learning Rate Schedule](assets/lr.png)
-
-![Estimated Time to Completion](assets/ETA.png)
-
-These plots demonstrate stable convergence, a smooth cosine learning rate schedule, and overall training health.
